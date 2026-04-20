@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Open+Sans:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 210 20% 98%;
+    --foreground: 220 15% 12%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 15% 12%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 15% 12%;
+
+    /* Primary — headers, icons, subtle UI */
+    --primary: 215 28% 17%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Accent — CTAs, buttons, highlights */
+    --accent: 0 72% 51%;
+    --accent-foreground: 0 0% 100%;
+
+    --secondary: 215 11% 93%;
+    --secondary-foreground: 220 15% 12%;
+
+    --muted: 215 8% 96%;
+    --muted-foreground: 220 10% 40%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 215 3% 88%;
+    --input: 215 3% 88%;
+    --ring: 0 72% 51%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 220 15% 12%;
+    --sidebar-primary: 215 28% 17%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 0 29% 93%;
+    --sidebar-accent-foreground: 220 15% 12%;
+    --sidebar-border: 215 3% 88%;
+    --sidebar-ring: 0 72% 51%;
+
+    /* Custom tokens */
+    --brand-green: 215 28% 17%;
+    --brand-green-light: 215 11% 93%;
+    --brand-accent: 0 72% 51%;
+    --brand-accent-light: 0 29% 93%;
+    --brand-dark: 220 15% 12%;
+    --brand-steel: 220 10% 55%;
+    --section-alt: 215 8% 96%;
+
+    /* Hero gradient — primary at top fading to near-black at bottom */
+    --hero-overlay: linear-gradient(
+      to bottom,
+      hsla(215, 28%, 17%, 0.7) 0%,
+      hsla(220, 15%, 8%, 0.88) 100%
+    );
+  }
+}
+
+@layer base {
+  * { @apply border-border; }
+  body { @apply bg-background text-foreground font-body antialiased; }
+  h1, h2, h3, h4, h5, h6 { @apply font-heading font-bold tracking-tight; }
+}
+
+@layer utilities {
+  .text-balance { text-wrap: balance; }
+
+  /* Hero: primary-tinted gradient overlay for depth */
+  .hero-gradient {
+    background: linear-gradient(
+      to bottom,
+      hsla(215, 28%, 17%, 0.7) 0%,
+      hsla(220, 15%, 8%, 0.88) 100%
+    );
+  }
+
+  /* Section alternation: light warm tint, never flat grey */
+  .section-alt {
+    background-color: hsl(215 8% 96%);
+  }
+
+  /* Accent button utility */
+  .btn-accent {
+    background-color: hsl(var(--accent));
+    color: hsl(var(--accent-foreground));
+  }
+  .btn-accent:hover {
+    background-color: hsla(0, 72%, 43%, 1);
+  }
+}
