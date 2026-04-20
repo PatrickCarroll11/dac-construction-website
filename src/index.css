@@ -6,7 +6,7 @@
 
 @layer base {
   :root {
-    --background: 210 20% 98%;
+    --background: 0 0% 96%;
     --foreground: 220 15% 12%;
 
     --card: 0 0% 100%;
@@ -16,14 +16,14 @@
     --popover-foreground: 220 15% 12%;
 
     /* Primary — headers, icons, subtle UI */
-    --primary: 215 28% 17%;
+    --primary: 0 0% 0%;
     --primary-foreground: 0 0% 100%;
 
     /* Accent — CTAs, buttons, highlights */
-    --accent: 0 72% 51%;
+    --accent: 358 74% 46%;
     --accent-foreground: 0 0% 100%;
 
-    --secondary: 215 11% 93%;
+    --secondary: 0 0% 96%;
     --secondary-foreground: 220 15% 12%;
 
     --muted: 215 8% 96%;
@@ -32,29 +32,29 @@
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 215 3% 88%;
-    --input: 215 3% 88%;
-    --ring: 0 72% 51%;
+    --border: 0 0% 85%;
+    --input: 0 0% 85%;
+    --ring: 358 74% 46%;
 
     --radius: 0.5rem;
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 220 15% 12%;
-    --sidebar-primary: 215 28% 17%;
+    --sidebar-primary: 0 0% 0%;
     --sidebar-primary-foreground: 0 0% 100%;
     --sidebar-accent: 0 29% 93%;
     --sidebar-accent-foreground: 220 15% 12%;
     --sidebar-border: 215 3% 88%;
-    --sidebar-ring: 0 72% 51%;
+    --sidebar-ring: 358 74% 46%;
 
     /* Custom tokens */
-    --brand-green: 215 28% 17%;
-    --brand-green-light: 215 11% 93%;
+    --brand-green: 0 0% 0%;
+    --brand-green-light: 358 22% 93%;
     --brand-accent: 0 72% 51%;
     --brand-accent-light: 0 29% 93%;
     --brand-dark: 220 15% 12%;
     --brand-steel: 220 10% 55%;
-    --section-alt: 215 8% 96%;
+    --section-alt: 0 0% 96%;
 
     /* Hero gradient — primary at top fading to near-black at bottom */
     --hero-overlay: linear-gradient(
@@ -78,8 +78,8 @@
   .hero-gradient {
     background: linear-gradient(
       to bottom,
-      hsla(215, 28%, 17%, 0.7) 0%,
-      hsla(220, 15%, 8%, 0.88) 100%
+      hsla(0, 0%, 0%, 0.8),
+      hsla(0, 0%, 10%, 0.95)
     );
   }
 
